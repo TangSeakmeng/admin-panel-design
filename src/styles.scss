@@ -1,1 +1,86 @@
 /* You can add global styles to this file, and also import other style files */
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.root-layout-wrapper {
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  .leftside-navbar {
+    width: 80px;
+    transition: 0.25s;
+    height: 100%;
+    background-color: aqua;
+
+    &:hover {
+      width: 200px;
+      transition: 0.25s;
+    }
+  }
+
+  .router-outlet-container {
+    flex: 1;
+    height: 100%;
+  }
+}
+
+.summarized-stat-layout-wrapper {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  .router-outlet-container {
+    flex: 1;
+    height: 100%;
+    background-color: green;
+  }
+
+  .rightside-summarized-stat {
+    width: 300px;
+    height: 100%;
+    transition: 0.25s;
+    background-color: blue;
+
+    &:hover {
+      width: 500px;
+      transition: 0.25s;
+    }
+  }
+}
+
+.main-layout-wrapper {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  .header-navbar-container {
+    width: 100%;
+    height: 30px;
+    transition: 0.25s;
+    background-color: darkcyan;
+
+    &:hover {
+      height: 100px;
+      transition: 0.25s;
+    }
+  }
+
+  .router-outlet-container {
+    flex: 1;
+    width: 100%;
+  }
+}
